@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
       //  System.out.println("Hello world!");
-        User userAllen = new User(new LanguageEnUs(),"Allen");
+        User userAllen = new User(new LanguageZhTw(),"Allen");
+        User userBen = new User(new LanguageEnUs(),"Ben");
         ArrayList<NotifyChannel> notifyChannels = new ArrayList<>();
         notifyChannels.add(new ChannelSms());
         notifyChannels.add(new ChannelEmail());
