@@ -2,15 +2,17 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-      //  System.out.println("Hello world!");
+
+        //使用者宣告
         User userAllen = new User(new LanguageZhTw(),"Allen");
         User userBen = new User(new LanguageEnUs(),"Ben");
+        //通知管道
         ArrayList<NotifyChannel> notifyChannels = new ArrayList<>();
         notifyChannels.add(new ChannelSms());
         notifyChannels.add(new ChannelEmail());
         //註冊
-//        BookCourseEvent.setNotifyChannels(notifyChannels);
-//        BookCourseEvent.notify(userAllen);
+        BookCourseEvent.setNotifyChannels(notifyChannels);
+        BookCourseEvent.notify(userBen);
         //取消
         CancelCourseEvent.setNotifyChannels(notifyChannels);
         CancelCourseEvent.notify(userAllen);
