@@ -14,10 +14,9 @@ public class Main {
         BookCourseEvent.setNotifyChannels(notifyChannels);
         BookCourseEvent.notify(userBen);
         //取消
-        CancelCourseEvent.setNotifyChannels(notifyChannels);
-        CancelCourseEvent.notify(userAllen);
-
-
+        CancelCourseEvent cancelCourseEvent = new CancelCourseEvent();
+        cancelCourseEvent.setNotifyChannels(notifyChannels);
+        cancelCourseEvent.dispatch(userAllen);
     }
 
 }

@@ -1,4 +1,4 @@
-public class ChannelEmail extends NotifyChannel{
+public class ChannelEmail extends NotifyChannel {
     public ChannelEmail() {
         this.setPipeline("Email");
     }
@@ -9,7 +9,7 @@ public class ChannelEmail extends NotifyChannel{
     }
 
     @Override
-    public void Send(String message) {
+    public void send(String message) {
         System.out.println("【"+ super.Pipeline +"】" + message );
     }
 }
