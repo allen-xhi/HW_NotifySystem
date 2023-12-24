@@ -11,11 +11,13 @@ public class Main {
         notifyChannels.add(new ChannelSms());
         notifyChannels.add(new ChannelEmail());
         //註冊
-        BookCourseEvent.setNotifyChannels(notifyChannels);
-        BookCourseEvent.notify(userBen);
+        BookCourseEvent bookCourseEvent = new BookCourseEvent();
+        bookCourseEvent.setNotifyChannels(notifyChannels);
+        bookCourseEvent.dispatch(userBen);
         //取消
-        CancelCourseEvent.setNotifyChannels(notifyChannels);
-        CancelCourseEvent.notify(userAllen);
+        CancelCourseEvent cancelCourseEvent = new CancelCourseEvent();
+        cancelCourseEvent.setNotifyChannels(notifyChannels);
+        cancelCourseEvent.dispatch(userAllen);
 
 
     }
