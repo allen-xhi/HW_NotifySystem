@@ -1,11 +1,9 @@
-public class NotifyChannel {
+public abstract class NotifyChannel {
     String Pipeline;
 
     public void setPipeline(String pipeline) {
         Pipeline = pipeline;
     }
 
-    public void Send(String message) {
-        return ;
-    }
+    public abstract void send(String message);
 }

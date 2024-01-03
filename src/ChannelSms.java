@@ -10,7 +10,7 @@ public class ChannelSms extends NotifyChannel{
     }
 
     @Override
-    public void Send(String message) {
+    public void send(String message) {
         System.out.println("【"+ super.Pipeline +"】" + message );
     }
 }
