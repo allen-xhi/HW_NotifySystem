@@ -1,5 +1,2 @@
-public class RegisterSuccessEvent extends Event{
-
-
-
+public class RegisterSuccessEvent extends Event {
 }

@@ -1,4 +1,2 @@
-public class CancelCourseEvent extends Event{
-
-
+public class CancelCourseEvent extends Event {
 }
