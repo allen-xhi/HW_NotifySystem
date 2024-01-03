@@ -1,10 +1,9 @@
 import java.util.Map;
 import java.util.HashMap;
-public class LanguageEnUs extends LanguageFamily{
+public class LanguageEnUs extends LanguageFamily {
     @Override
     public String getContent(Event e) {
         HashMap<String,String> hashmap = new HashMap<String,String>();
-
         hashmap.put(BookCourseEvent.class.getName(),"Book course : %s");
         hashmap.put(CancelCourseEvent.class.getName(),"Cancel course : %s");
         hashmap.put(RegisterSuccessEvent.class.getName(),"Register  : %s");

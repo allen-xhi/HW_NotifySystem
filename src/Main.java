@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-
         //使用者宣告
         User userAllen = new User(new LanguageZhTw(),"Allen");
         User userBen = new User(new LanguageEnUs(),"Ben");
@@ -18,8 +17,5 @@ public class Main {
         CancelCourseEvent cancelCourseEvent = new CancelCourseEvent();
         cancelCourseEvent.setNotifyChannels(notifyChannels);
         cancelCourseEvent.dispatch(userAllen);
-
-
     }
-
 }
